@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Student Management System</h2>
+
+        <div class="course">
+            <h3>Available Courses</h3>
+            <button onclick="getCourses()">Load Courses</button>
+            <ul id="course-list"></ul>
+        </div>
+
+        <div class="student">
+            <h3>Add a Student</h3>
+            <input type="text" id="student-name" placeholder="Student Name">
+            <input type="text" id="student-grade" placeholder="Student Grade">
+            <button onclick="addStudent()">Add Student</button>
+            <ul id="student-list"></ul>
+        </div>
+        <div class="section">
+            <h3>Teacher Management</h3>
+            <input type="number" id="teacher-id" placeholder="Teacher ID">
+            <input type="text" id="teacher-name" placeholder="Teacher Name">
+            <input type="text" id="subject-taught" placeholder="Subject Taught">
+            <input type="number" id="teacher-experience" placeholder="Experience in Years">
+            <button onclick="addTeacher()">Add Teacher</button>
+            <ul id="teacher-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
