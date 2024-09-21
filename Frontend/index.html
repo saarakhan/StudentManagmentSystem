@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Management System</title>
     <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
@@ -22,25 +23,24 @@
 
         <div class="student">
             <h3>Add a Student</h3>
-            <input type="text" id="student-name" placeholder="Student Name">
-            <input type="text" id="student-grade" placeholder="Student Grade">
+            <input type="text" id="student-name" placeholder="Student Name" required>
+            <input type="text" id="student-grade" placeholder="Student Grade" required>
             <button onclick="addStudent()">Add Student</button>
             <ul id="student-list"></ul>
         </div>
+
         <div class="section">
             <h3>Teacher Management</h3>
-            <input type="number" id="teacher-id" placeholder="Teacher ID">
-            <input type="text" id="teacher-name" placeholder="Teacher Name">
-            <input type="text" id="subject-taught" placeholder="Subject Taught">
-            <input type="number" id="teacher-experience" placeholder="Experience in Years">
+            <input type="number" id="teacher-id" placeholder="Teacher ID" required>
+            <input type="text" id="teacher-name" placeholder="Teacher Name" required>
+            <input type="text" id="subject-taught" placeholder="Subject Taught" required>
+            <input type="number" id="teacher-experience" placeholder="Experience in Years" required>
             <button onclick="addTeacher()">Add Teacher</button>
             <ul id="teacher-list"></ul>
         </div>
     </div>
 
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
